@@ -1,3 +1,10 @@
 ---
 Name: grouped-reports
 ---
+
+SilverStripe\Reports\ReportAdmin:
+  extensions:
+  - ReportsExtension
+SilverStripe\CMS\Reports\BrokenLinksReport:
+  extensions:
+  - ReportsExtraExtension
