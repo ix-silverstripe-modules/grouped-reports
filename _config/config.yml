@@ -2,13 +2,24 @@
 Name: grouped-reports
 After: silvershop-config
 ---
-
 SilverStripe\Reports\ReportAdmin:
   extensions:
   - ReportsExtension
 SilverStripe\CMS\Reports\BrokenLinksReport:
   extensions:
   - ReportsExtraExtension
-SilverShop\Reports\SideReport\ShopPeriodReport:
+SilverShop\Reports\AbandonedCartReport:
   extensions:
-  - ReportsShopExtension
+    - ReportsShopExtension
+SilverShop\Reports\CustomerReport:
+  extensions:
+    - ReportsShopExtension
+SilverShop\Reports\ProductReport:
+  extensions:
+    - ReportsShopExtension
+SilverShop\Reports\ShopSalesReport:
+  extensions:
+    - ReportsShopExtension
+SilverShop\Reports\TaxReport:
+  extensions:
+    - ReportsShopExtension

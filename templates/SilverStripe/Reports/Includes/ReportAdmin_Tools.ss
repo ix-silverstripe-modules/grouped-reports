@@ -7,7 +7,7 @@
                     <dl id="" class="tree unformatted">
                         <% loop $GroupedReports.GroupedBy('Grouping').sort('Grouping ASC') %>
                             <dl>
-                                <dt>$Grouping</dt>
+                                <dt class="font-icon-chart-line"> $Grouping</dt>
                                 <% loop $Children.sort('Title') %>
                                     <dd class="">
                                         <a href="$Link" title="$description.Att">$TreeTitle</a>
