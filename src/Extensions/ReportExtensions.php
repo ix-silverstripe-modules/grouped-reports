@@ -29,3 +29,9 @@ class ReportsExtraExtension extends DataExtension {
 		return _t('SideReport.BrokenLinksGroupTitle', "Broken links reports");
 	} 
 }
+
+class ReportsShopExtension extends DataExtension {
+    public function group(){
+        return _t('SilverShop\Reports\SideReport.ShopGroup', 'Shop');
+    }
+}
