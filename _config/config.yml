@@ -1,5 +1,6 @@
 ---
 Name: grouped-reports
+After: silvershop-config
 ---
 
 SilverStripe\Reports\ReportAdmin:
