@@ -11,4 +11,4 @@ class MyReport extends GroupedReport
     }
 ```
 Also included are custom Print and Export buttons. They overcome the pagination limitations of the core buttons and they do a better job of formatting output.
-The export button can also accept a custom filename using `->setCustomFileName->('my_file')` and it appends a timestamp and the .csv extension.
+The export button can also accept a custom filename using `->setCustomFileName('my_file')` and it appends a timestamp and the .csv extension.
