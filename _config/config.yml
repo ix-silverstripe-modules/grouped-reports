@@ -8,3 +8,6 @@ SilverStripe\Reports\ReportAdmin:
 SilverStripe\CMS\Reports\BrokenLinksReport:
   extensions:
   - ReportsExtraExtension
+SilverShop\Reports\SideReport\ShopPeriodReport:
+  extensions:
+  - ReportsShopExtension
