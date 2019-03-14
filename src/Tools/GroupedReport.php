@@ -2,6 +2,8 @@
 
 namespace Internetrix\GroupedReports;
 
+use Internetrix\GroupedReport\CustomGridFieldExportButton;
+use Internetrix\GroupedReport\CustomGridFieldPrintButton;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldExportButton;
 use SilverStripe\Forms\GridField\GridFieldPrintButton;

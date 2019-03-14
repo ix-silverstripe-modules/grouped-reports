@@ -6,6 +6,7 @@
                 <% if $GroupedReports %>
                     <dl id="" class="tree unformatted">
                         <% loop $GroupedReports.GroupedBy('Grouping').sort('Grouping ASC') %>
+                            <% if $Grouping %>
                             <dl>
                                 <dt class="font-icon-chart-line"> $Grouping</dt>
                                 <% loop $Children.sort('Title') %>
@@ -14,6 +15,7 @@
                                     </dd>
                                 <% end_loop %>
                             </dl>
+                            <% end_if %>
                         <% end_loop %>
                     </dl>
                 <% end_if %>
