@@ -1,5 +1,5 @@
 This module provides a simple tree interface for reports. It groups core reports together, and a group for SilverShop.
-To add your own grouped report, simple create a report extending from the GroupedReport class. Then include a function called "group" that returns a string matching the name of your group.
+To add your own grouped report, create a report extending from the GroupedReport class. Then include a function called "group" that returns a string matching the name of your group.
 
 ```php
 

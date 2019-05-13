@@ -30,11 +30,12 @@ class GroupedReport extends Report
     public function canView($member = null)
     {
         $member = Security::getCurrentUser();
-        return Permission::checkMember($member, array('CMS_ACCESS_DataObjects', 'CMS_ACCESS_ReportAdmin'));
+        return Permission::checkMember($member, array('CMS_ACCESS_ReportAdmin'));
     }
 
-    public function getReportGridField(GridField $grid, String $filename)
+    public function getReportField()
     {
+        $grid = parent::getReportField();
         $grid->setTitle($this->title());
         $config = $grid->getConfig();
         $config->removeComponentsByType(GridFieldExportButton::class);
@@ -43,7 +44,7 @@ class GroupedReport extends Report
         $config->addComponent($export = new CustomGridFieldExportButton('buttons-before-left'));
         $print->setPrintColumns($this->columns());
         $export->setExportColumns($this->columns());
-        $export->setCustomFileName($filename);
+        $export->setCustomFileName($grid->Title());
         return $grid;
     }
 
