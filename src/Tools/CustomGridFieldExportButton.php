@@ -32,7 +32,7 @@ class CustomGridFieldExportButton extends GridFieldExportButton
         $now = date("Y-m-d_H-i");
         $customFileName = $this->getCustomFileName();
         $fileName = $customFileName ? preg_replace('/\W+/', '_', $customFileName) : "export";
-        $fileName = "$fileName_$now.csv";
+        $fileName = "{$fileName}_{$now}.csv";
 
         if ($fileData = $this->generateExportFileData($gridField)) {
             return HTTPRequest::send_file($fileData, $fileName, 'text/csv');
